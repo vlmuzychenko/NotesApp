@@ -5,7 +5,6 @@ import NoteGrid from './NoteGrid.jsx';
 
 import './NotesApp.css';
 
-
 class NotesApp extends React.Component {
   constructor(props) {
     super(props);
