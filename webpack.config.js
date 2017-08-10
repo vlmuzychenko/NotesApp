@@ -8,6 +8,7 @@ module.exports = {
     publicPath: "build/",
     filename: "bundle.js"
   },
+  devtool: 'eval-source-map',
   module: {
     loaders: [
       {

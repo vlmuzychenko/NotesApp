@@ -3,7 +3,8 @@ import React from 'react';
 import NoteColor from './NoteColor.jsx';
 
 class NoteEditor extends React.Component {
-  construcror(props) {
+  constructor(props) {
+    super(props);
     this.state = {
       text: ''
     };

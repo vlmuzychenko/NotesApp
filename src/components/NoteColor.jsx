@@ -1,8 +1,32 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 
+const THEME = [
+  {
+    id: 1,
+    color: '#995193'
+  },
+  {
+    id: 2,
+    color: '#F25F5C'
+  },
+  {
+    id: 3,
+    color: '#FFE066'
+  },
+  {
+    id: 4,
+    color: '#247BA0'
+  },
+  {
+    id: 5,
+    color: '#70C1B3'
+  }
+];
+
 class NoteColor extends React.Component {
-  construcror(props) {
+  constructor(props) {
+    super(props);
     this.state = {
       noteColor: THEME,
       selectedColor: '1'
