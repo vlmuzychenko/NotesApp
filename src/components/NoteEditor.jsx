@@ -8,6 +8,10 @@ class NoteEditor extends React.Component {
     this.state = {
       text: ''
     };
+
+    this.handleColorChange = this.handleColorChange.bind(this);
+    this.handleTextChange = this.handleTextChange.bind(this);
+    this.handleNoteAdd = this.handleNoteAdd.bind(this);
   }
 
   handleTextChange(e) {

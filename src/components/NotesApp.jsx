@@ -8,10 +8,14 @@ import './NotesApp.css';
 class NotesApp extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       notes: [],
       filter: ''
     };
+
+    this.filterNotes = this.filterNotes.bind(this);
+    this.handleNoteAdd = this.handleNoteAdd.bind(this);
   }
 
   componentDidMount() {
