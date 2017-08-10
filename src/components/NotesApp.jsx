@@ -5,35 +5,18 @@ import NoteGrid from './NoteGrid.jsx';
 
 import './NotesApp.css';
 
-const THEME = [
-  {
-    id: 1,
-    color: '#995193'
-  },
-  {
-    id: 2,
-    color: '#F25F5C'
-  },
-  {
-    id: 3,
-    color: '#FFE066'
-  },
-  {
-    id: 4,
-    color: '#247BA0'
-  },
-  {
-    id: 5,
-    color: '#70C1B3'
-  }
-];
 
 class NotesApp extends React.Component {
-  construcror(props) {
+  constructor(props) {
+    super(props);
+
     this.state = {
       notes: [],
       filter: ''
     };
+
+    this.filterNotes = this.filterNotes.bind(this);
+    this.handleNoteAdd = this.handleNoteAdd.bind(this);
   }
 
   componentDidMount() {

@@ -3,10 +3,15 @@ import React from 'react';
 import NoteColor from './NoteColor.jsx';
 
 class NoteEditor extends React.Component {
-  construcror(props) {
+  constructor(props) {
+    super(props);
     this.state = {
       text: ''
     };
+
+    this.handleColorChange = this.handleColorChange.bind(this);
+    this.handleTextChange = this.handleTextChange.bind(this);
+    this.handleNoteAdd = this.handleNoteAdd.bind(this);
   }
 
   handleTextChange(e) {
